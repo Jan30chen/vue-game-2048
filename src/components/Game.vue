@@ -66,6 +66,9 @@ export default {
       let _list = this.game.list;
 
       switch (e.keyCode){
+        case 82:
+          this.init();
+          return;
         case 67:
           this.$set(this.game, "cheat_mode", !this.game.cheat_mode);
           break;
